@@ -1,0 +1,77 @@
+// Question 1
+(function myFunction() {
+  var foo;
+  var i;
+
+  foo = "bar";
+
+  for(i = 0; i < 10; i++) {
+    console.log(i);
+  }
+
+  //sayHi();
+
+  var sayHi = function() {
+    console.log("Hi");
+  }
+
+  sayHi();
+})()
+
+var a = 5;
+var b = function(){}
+
+$(function(){
+  $('a').click(function(){});
+
+  function(){return 5;}
+  function(){ function(){} }
+})
+
+function wtf(){
+  return function(msg) {
+    console.log(msg);
+  }
+}
+
+var byx = function(x){
+  return function(n) {
+    return n * x;
+  }
+}
+
+// Get vs Post
+
+get '/path' do
+  # retrieve data from somewhere
+  # set instance variables
+  # render <template>
+end
+
+post '/path' do
+  # receive data
+  # save/create the record
+  # if success
+    # redirect somewhere...
+  # not success
+    # render errors
+end
+
+
+// Question naming routes
+
+7 Routes
+
+collection => GET localhost/listings # render the collection
+new        => GET localhost/listings/new # render a form
+show       => GET localhost/listings/:id # render specific resource
+edit       => GET localhost/listings/:id/edit #render form
+
+create     => POST localhost/listings  #creating new resource and redirect
+update     => POST localhost/listings/:id #update existing resource and redirect
+delete     => POST localhost/listings/:id/delete #deletes resource, redirects...
+
+devbootcamp/phases/2/students/5
+devbootcamp/students/5
+
+
